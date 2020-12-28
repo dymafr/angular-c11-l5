@@ -12,6 +12,7 @@ import { PanierContainerComponent } from "./panier-container/panier-container.co
 import { IngredientListComponent } from "./panier-container/ingredient-list/ingredient-list.component";
 import { RouterModule } from "@angular/router";
 import { APP_ROUTES } from "./app.routes";
+import { PanierService } from './shared/services/panier.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(APP_ROUTES)],
@@ -26,6 +27,6 @@ import { APP_ROUTES } from "./app.routes";
     IngredientListComponent
   ],
   bootstrap: [AppComponent],
-  providers: []
+  providers: [PanierService]
 })
 export class AppModule {}
