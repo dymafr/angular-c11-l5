@@ -5,10 +5,10 @@ import { PanierService } from '../../shared/services/panier.service';
 @Component({
   selector: 'app-cocktail-details',
   templateUrl: './cocktail-details.component.html',
-  styleUrls: ['./cocktail-details.component.scss']
+  styleUrls: ['./cocktail-details.component.scss'],
 })
 export class CocktailDetailsComponent implements OnInit {
-  @Input() cocktail?: Cocktail;
+  @Input() cocktail!: Cocktail;
 
   constructor(private panierService: PanierService) {}
 
